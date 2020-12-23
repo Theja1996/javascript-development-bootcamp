@@ -4,7 +4,28 @@
 </head>
 <body>
     <button onclick="alert('thank');">click</button>
-    <script src="index.js">
+    <p id ="text">Hi all JS for learning</p>
+    <button id ="btn">click me</button>
+    <script  >
+    	// accesing HTML element throught JS
+	// document.getElementById("text").innerHTML ="HELLo";
+var isOn = false;
+
+document.getElementById("btn").onclick = function(){
+// 	alert("you click me ok");
+
+if(isOn == false){
+	isOn = true;
+	document.getElementById("text").innerHTML = "HELLo";
+}
+else{
+isOn = false;
+	document.getElementById("text").innerHTML ="how awesome";}
+
+
+
+ }
+
 
     </script>
 </body>
