@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //for loop
+var car =["BMW",'KIA','Benz','TOYOTA'];
+var i;
+  for ( i=0; i<car.length;i++){
+      document.write(car[i]+"<br>");
+  }
+  document.write("<br>");
+  
+  var x;
+for(x of car){
+    document.write(x+"<br>");
+}
+document.write("<br>");
+
+//while loop
+var y =0 ;
+while(y<car.length){
+    document.write(car[y]+"<br>");
+    y++;
+}
+
+//do-while
+var t =0;
+
+do{
+    document.write(car[t]+"<br>");
+}while(t>car.length);
+
+
+document.write("<br>");
+var carReverse = car.reverse();
+document.write(carReverse);
+</script>
+</html>

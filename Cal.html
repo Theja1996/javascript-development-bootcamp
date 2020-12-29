@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Advanced DOM manipulation
+
+    </title>
+</head>
+<body>
+    <p id="text">Hello </p>
+    <button onclick=On()> ON</button>
+    <button onclick=Off()> OFF</button>
+    <br>
+    <br>
+    <br>
+    <input placeholder=" First Number " type="text" name="num1" id="num1">
+    <input placeholder=" Second Number "  type="text" name="num2" id="num2">
+    <br>
+    <button onclick=Add()> ADD</button>
+    <p id='sum'>0</p>
+</body>
+
+<script>
+function On(){
+    document.getElementById("text").innerHTML ="friends"
+};
+function Off(){
+    document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "fam";
+};
+function Add(){
+    var num1,num2,sum;
+    num1=  Number(document.getElementById("num1").value) ;
+    num2 = Number(document.getElementById("num2").value) ;
+    sum = num1+num2;
+    document.getElementById("sum").innerHTML = sum;
+    
+}
+</script>
+</html>

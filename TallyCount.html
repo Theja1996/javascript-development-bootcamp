@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advanced DOM manipulation</title>
+
+</head>
+<body>
+    <button id="up" onclick=Count()>count: 0</button>
+    <button id="reset" onclick=Reset()>Reset</button>
+</body>
+<script >
+    var count = 0;
+function Count(){
+    count++;
+document.getElementById('up').innerHTML = "count: "+ count;
+}
+function Reset(){
+count=0;
+document.getElementById('up').innerHTML = "count: "+ count;
+}
+
+</script>
+</html>
