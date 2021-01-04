@@ -1,0 +1,22 @@
+body{
+  margin-top: 10;
+    background-color: cadetblue;
+    padding: 2;
+  
+}
+body h1{
+
+    color: darksalmon;
+    text-align: center;
+}
+.red{
+    background-color: crimson;
+    color: blanchedalmond;
+}
+.blue{
+    background-color: cyan;
+    padding: 4;
+}
+.white{
+    background-color: chartreuse;
+}
