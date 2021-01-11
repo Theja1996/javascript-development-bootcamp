@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    .someText{
+        font-size: 200%;
+        color: aqua;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Advanced DOM manipulation</title>
 </head>
 <body>
-   <p id='text'>This is awesome</p>
+   <p id='text' class="someText">This is awesome</p>
    <button onclick=Change()>Change</button>
+
+</br>
+</br>
+ <input type="text" name="name" id="fname" onchange="eventhandling()">
+
+</br>
+</br>
+<div style="background-color: cadetblue; height: 50px; width: 200px;padding: 40; align-items: center;" onmouseover="mOver(this)"
+onmouseout="mOut(this)" id="msg"
+>
+
+Hi come here !!!
+    
+</div>
+
+
+
+
+
 </body>
 <script>
-function Change(){
-    document.getElementById("text").style.color = 'red';
-   document.getElementById("text").style.fontSize = '200%';
+
+document.write(Date());
+
+var element = getElementById("msg");
+element.addEventListener("click", function(){
+    alert("hello event");
+})
+
+function mOver(obj){
+obj.innerHTML = "Thanks for comming";
+obj.style.color ="Yellow";
+
 }
 
-        
+function mOut(objs){
+    objs.innerHTML = "See you later";
+    objs.style.color ="red";
+}
+
+
+function eventhandling(){
+   // document.getElementById("fname").value.toUpperCase();
+
+    var x =  document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+
+
+function Change(){
+//     document.getElementById("text").style.color = 'red';
+//    document.getElementById("text").style.fontSize = '200%';
+   document.getElementById("text").classList.toggle("someText");
+
+   document.getElementById("text").classList.remove("sometext");
+
+}
 </script>
 </html>
