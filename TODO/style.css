@@ -1,0 +1,9 @@
+.custom{
+    padding: 4%;
+    align-items: center;
+    justify-items: center;
+}
+
+body{
+    background-color: cyan;
+}
