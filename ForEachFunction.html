@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>List Item with iteration index</p>
+        <p id="Demo"></p>
+        <p id="Demo1"></p>
+</body>
+
+<script>
+var pc = ["Asus","Dell","hp","mis"];
+pc.forEach(Pcfunction);
+
+function Pcfunction(item,index){
+    document.getElementById("Demo").innerHTML += index + ":" + item + "<br>";
+
+
+    var sum = 0;
+var numbers = [65, 44, 12, 4];
+numbers.forEach(myFunction);
+
+function myFunction(item) {
+  sum += item;
+  document.getElementById("Demo1").innerHTML = sum;
+}
+  
+} 
+
+
+</script>
+</html>

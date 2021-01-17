@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Demo"></p>
+    <p id="Demo1"></p>
+    <p id="Demo2"></p>
+</body>
+<script >
+// add 2 item in index 2 and no remove items from original array
+var pcItem = ['asus','acer','hp','dell','msi'];
+pcItem.splice(2,0,'mac','lenovo');
+document.getElementById("Demo").innerHTML = pcItem + "<br>";
+
+// add 2 item in index 2 and remove 2 items from original array
+var pcItem1 = ['asus','acer','hp','dell','msi'];
+pcItem1.splice(2,2,'huawei','samsung');
+document.getElementById("Demo1").innerHTML = pcItem1;
+
+
+// remove 2 item on index 2 position
+var pcItem2 = ['asus','acer','hp','dell','msi'];
+pcItem2.splice(2,3);
+document.getElementById("Demo2").innerHTML = pcItem2;
+
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Demo"></p>
+    <button onclick=" Myfunction()">Try it</button>
+</body>
+
+<script>
+var ages = [56,84,32,12,15,18];
+
+function Check(age){
+    return age >= 18;
+}
+
+function Myfunction(){
+    document.getElementById("Demo").innerHTML = ages.filter(Check);
+}
+
+
+</script>
+</html>

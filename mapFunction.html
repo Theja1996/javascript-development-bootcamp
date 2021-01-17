@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Demo"></p>
+</body>
+
+<script>
+
+var number = [34,78,97,25,87];
+var x = number.map(Myfunction);
+
+function Myfunction(num){
+ return num * 2;
+   
+}
+document.getElementById("Demo").innerHTML = x;
+
+</script>
+</html>
